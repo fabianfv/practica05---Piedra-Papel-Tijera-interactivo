@@ -48,6 +48,28 @@ function despedirse() {
   console.log("Gracias por jugar a PIEDRA PAPEL TIJERA. Vuelve pronto.")
 }
 
-function jugar() {}
+function jugar() {
+  let eleccion_jugador, eleccion_ordenador, ganador, mensaje
+  const MENU =
+    "Elige una opción\n\n1- PIEDRA\n2- PAPEL\n3- TIJERA\n\nPulsa la tecla ESC o el botón Cancelar para terminar\n\n"
+
+  while (true) {
+    eleccion_jugador = prompt(MENU)
+
+    if (!eleccion_jugador) break
+
+    eleccion_jugador = Number(eleccion_jugador)
+
+    if (![PIEDRA, PAPEL, TIJERA].includes(--eleccion_jugador)) continue
+
+    eleccion_ordenador = opcion_al_azar()
+
+    ganador = quien_gana(eleccion_jugador, eleccion_ordenador)
+    mensaje = crear_mensaje(eleccion_jugador, eleccion_ordenador, ganador)
+    informar_ganador(mensaje)
+  }
+
+  despedirse()
+}
 
 jugar()
