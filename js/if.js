@@ -19,7 +19,19 @@ function quien_gana(jugador, ordenador) {
   return ORDENADOR
 }
 
-function crear_mensaje() {}
+function crear_mensaje(eleccion_jugador, eleccion_ordenador, ganador) {
+  const OPCIONES = ["PIEDRA", "PAPEL", "TIJERA"]
+
+  if (ganador === EMPATE) {
+    return `¡¡¡EMPATE!!! Ambos jugadores eligieron: ${OPCIONES[eleccion_jugador]}`
+  }
+
+  if (ganador === JUGADOR) {
+    return `GANA JUGADOR, porque ${OPCIONES[eleccion_jugador]} vence a ${OPCIONES[eleccion_ordenador]}`
+  }
+
+  return `GANA ORDENADOR, porque ${OPCIONES[eleccion_ordenador]} vence a ${OPCIONES[eleccion_jugador]}`
+}
 
 function opcion_al_azar() {}
 
