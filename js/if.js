@@ -33,11 +33,20 @@ function crear_mensaje(eleccion_jugador, eleccion_ordenador, ganador) {
   return `GANA ORDENADOR, porque ${OPCIONES[eleccion_ordenador]} vence a ${OPCIONES[eleccion_jugador]}`
 }
 
-function opcion_al_azar() {}
+function opcion_al_azar() {
+  const MAX = 2
+  const MIN = 0
+  return Math.round(Math.random() * (MAX - MIN) + MIN)
+}
 
-function informar_ganador() {}
+function informar_ganador(mensaje) {
+  console.log(mensaje)
+}
 
-function despedirse() {}
+function despedirse() {
+  console.clear()
+  console.log("Gracias por jugar a PIEDRA PAPEL TIJERA. Vuelve pronto.")
+}
 
 function jugar() {}
 
