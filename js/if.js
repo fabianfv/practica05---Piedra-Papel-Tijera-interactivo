@@ -6,7 +6,18 @@ const JUGADOR = 0
 const ORDENADOR = 1
 const EMPATE = 2
 
-function quien_gana() {}
+function quien_gana(jugador, ordenador) {
+  if (jugador === ordenador) return EMPATE
+
+  if (
+    (jugador === PIEDRA && ordenador === TIJERA) ||
+    (jugador === PAPEL && ordenador === PIEDRA) ||
+    (jugador === TIJERA && ordenador === PAPEL)
+  )
+    return JUGADOR
+
+  return ORDENADOR
+}
 
 function crear_mensaje() {}
 
