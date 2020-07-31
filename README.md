@@ -9,3 +9,5 @@ La interación con el usuario se realiza a través del uso de la función "promp
 Se añadió la posibilidad de elegir la implementación desde la página.
 
 Se añadió la posibilidad de visualizar los resultados en la página además de en la consola.
+
+https://fabianfv.github.io/practica05---Piedra-Papel-Tijera-interactivo/
