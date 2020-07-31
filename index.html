@@ -28,7 +28,6 @@
     <meta name="twitter:description" content="" />
     <meta name="twitter:image" content="http://" />
 
-    <!-- FontAwesome -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
@@ -36,70 +35,20 @@
       crossorigin="anonymous"
     />
 
-    <!-- Nuestro Framework de CSS preferido, mi preferido es BULMA -->
-    <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css" />    
-    
-    <!-- Nuestro CSS Compilado a través de SASS ó sin compilar solo CSS básico -->
-    <link rel="stylesheet" href="css/estilos.css" />
-    
   </head>
   <body>
-    <header>
-      <!--
-        *
-        * Bloque HEADER
-        *
-      -->
-           <figure id="logo">
-            <!--
-             *
-             * Bloque LOGO
-             *
-            -->
-                <img src="" alt="">
-           </figure>
-      
-           <nav id="navegacionPrincipal">
-            <!--
-             *
-             * Bloque Links de Navegación Principal
-             *
-            -->
-          </nav>
-      
-    </header>
-
     <main>
-      <!--
-        *
-        * Bloque MAIN
-        *
-      -->
-      
-          <section>
-            <!--
-             *
-             * Bloque SECTION
-             *
-            -->
-          </section>
-      
-          <article>
-            <!--
-             *
-             * Bloque ARTICLE
-             *
-            -->
-          </article>
-      
+      <h1>Elije una implementación para comenzar a jugar</h1>
+      <h3>Este sitio funciona mejor con Firefox</h3>
+      <p>Si no ves los resultados abre la consola del navegador</p>
+      <input type="radio" id="if" name="if" value="if">
+      <label for="if">Implementación usando la estructural de control condicional "if"</label>
+      <br>
+      <input type="radio" id="switch" name="switch" value="switch">
+      <label for="switch">Implementación usando la estructural de control condicional "switch"</label>
+      <br>
+      <textarea name="mensajes" id="mensajes_area" cols="80" rows="50"></textarea>
     </main>
-
-    <footer>
-      <!--
-        *
-        * Bloque FOOTER
-        *
-        -->
-    </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>

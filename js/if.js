@@ -1,11 +1,3 @@
-const PIEDRA = 0
-const PAPEL = 1
-const TIJERA = 2
-
-const JUGADOR = 0
-const ORDENADOR = 1
-const EMPATE = 2
-
 function quien_gana(jugador, ordenador) {
   if (jugador === ordenador) return EMPATE
 
@@ -41,11 +33,13 @@ function opcion_al_azar() {
 
 function informar_ganador(mensaje) {
   console.log(mensaje)
+  MENSAJES_AREA.value += mensaje + "\n"
 }
 
 function despedirse() {
-  console.clear()
-  console.log("Gracias por jugar a PIEDRA PAPEL TIJERA. Vuelve pronto.")
+  const mensaje = "Gracias por jugar a PIEDRA PAPEL TIJERA. Vuelve pronto."
+  console.log(mensaje)
+  MENSAJES_AREA.value += mensaje + "\n"
 }
 
 function jugar() {
